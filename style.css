@@ -1,0 +1,97 @@
+#military-3d-container {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 50vh;
+    z-index: -1;
+    pointer-events: none;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #0a0a0a;
+    color: #d0d0d0;
+    text-shadow: 2px 2px 10px rgba(40, 167, 69, 0.5);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+
+.message-box {
+    border: 2px solid #28a745;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    height: 250px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    scroll-behavior: smooth;
+}
+
+.card {
+    border: 2px solid #155724;
+    border-radius: 12px;
+    background-color: #1b1e1b;
+}
+
+input {
+    background-color: #222;
+    color: white;
+    border: 1px solid #28a745;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+button {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.01);
+}
+
+.message {
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+    line-height: 1.4;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    font-size: 0.95rem;
+}
+
+.sender {
+    background-color: #198754;
+    align-self: flex-end;
+    text-align: right;
+    color: #fff;
+}
+
+.receiver {
+    background-color: #343a40;
+    align-self: flex-start;
+    text-align: left;
+    color: #fff;
+}
+
+#messageBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
